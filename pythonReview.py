@@ -1,5 +1,5 @@
 def create_youtube_video(title, desc):
-	video= {"Title": title, "Desc": desc, "Likes": 0, "Dislikes" : 0, "Username": {}}
+	video= {"Title": title, "Desc": desc, "Likes": 0, "Dislikes" : 0, "Comments": {"username" : ""}}
 	return video
 
 video = create_youtube_video("video1", "vid")
@@ -16,5 +16,11 @@ def dislikes(dict2):
 likes(video)
 
 def add_comment(youtube_video, username, comment_text):
-	comments = {"username" : comment_text}
+	dicti = video["Comments"]
+	dicti["Comments"] = input
+	return dicti
+	print(dicti)
+
+
+
 
